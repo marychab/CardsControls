@@ -1,0 +1,243 @@
+[gd_scene load_steps=5 format=3 uid="uid://b4de1wocdojxk"]
+
+[ext_resource type="Script" path="res://Example/MyCardsContainer.gd" id="1_8ixyt"]
+[ext_resource type="Script" path="res://Example/BasicCardControll.gd" id="2_m1qnt"]
+[ext_resource type="Texture2D" uid="uid://cdayo66c6r37p" path="res://icon.svg" id="3_pg6kt"]
+[ext_resource type="Script" path="res://Example/Status.gd" id="5_81kgx"]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="CardsContainer" type="Container" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -153.0
+offset_top = -89.0
+offset_right = 154.0
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_8ixyt")
+sorting_type = 1
+arc_radius = 298.0
+arc_width = 695.0
+max_width = 553
+separation = -55
+
+[node name="Card1" type="TextureRect" parent="CardsContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+texture = ExtResource("3_pg6kt")
+script = ExtResource("2_m1qnt")
+
+[node name="Label" type="Label" parent="CardsContainer/Card1"]
+layout_mode = 0
+offset_left = 12.1755
+offset_top = 9.73993
+offset_right = 52.1755
+offset_bottom = 35.7399
+text = "10
+"
+
+[node name="ColorRect" type="ColorRect" parent="CardsContainer/Card1"]
+layout_mode = 0
+offset_left = 47.4161
+offset_top = -15.5602
+offset_right = 87.4161
+offset_bottom = 24.4398
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="CardsContainer/Card1/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "8"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Card2" type="TextureRect" parent="CardsContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+texture = ExtResource("3_pg6kt")
+script = ExtResource("2_m1qnt")
+
+[node name="Label" type="Label" parent="CardsContainer/Card2"]
+layout_mode = 0
+offset_left = 12.1755
+offset_top = 9.73993
+offset_right = 52.1755
+offset_bottom = 35.7399
+text = "10
+"
+
+[node name="ColorRect" type="ColorRect" parent="CardsContainer/Card2"]
+layout_mode = 0
+offset_left = 47.4161
+offset_top = -15.5602
+offset_right = 87.4161
+offset_bottom = 24.4398
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="CardsContainer/Card2/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "8"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Card3" type="TextureRect" parent="CardsContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+texture = ExtResource("3_pg6kt")
+script = ExtResource("2_m1qnt")
+
+[node name="Label" type="Label" parent="CardsContainer/Card3"]
+layout_mode = 0
+offset_left = 12.1755
+offset_top = 9.73993
+offset_right = 52.1755
+offset_bottom = 35.7399
+text = "10
+"
+
+[node name="ColorRect" type="ColorRect" parent="CardsContainer/Card3"]
+layout_mode = 0
+offset_left = 47.4161
+offset_top = -15.5602
+offset_right = 87.4161
+offset_bottom = 24.4398
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="CardsContainer/Card3/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "8"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Card4" type="TextureRect" parent="CardsContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+texture = ExtResource("3_pg6kt")
+script = ExtResource("2_m1qnt")
+
+[node name="Label" type="Label" parent="CardsContainer/Card4"]
+layout_mode = 0
+offset_left = 12.1755
+offset_top = 9.73993
+offset_right = 52.1755
+offset_bottom = 35.7399
+text = "10
+"
+
+[node name="ColorRect" type="ColorRect" parent="CardsContainer/Card4"]
+layout_mode = 0
+offset_left = 47.4161
+offset_top = -15.5602
+offset_right = 87.4161
+offset_bottom = 24.4398
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="CardsContainer/Card4/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "8"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Card5" type="TextureRect" parent="CardsContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+texture = ExtResource("3_pg6kt")
+script = ExtResource("2_m1qnt")
+
+[node name="Label" type="Label" parent="CardsContainer/Card5"]
+layout_mode = 0
+offset_left = 12.1755
+offset_top = 9.73993
+offset_right = 52.1755
+offset_bottom = 35.7399
+text = "10
+"
+
+[node name="ColorRect" type="ColorRect" parent="CardsContainer/Card5"]
+layout_mode = 0
+offset_left = 47.4161
+offset_top = -15.5602
+offset_right = 87.4161
+offset_bottom = 24.4398
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="CardsContainer/Card5/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "8"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Status" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -113.0
+offset_top = -11.0
+offset_right = 113.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+script = ExtResource("5_81kgx")
+
+[connection signal="aim" from="CardsContainer/Card1" to="Status" method="_on_card_aim"]
+[connection signal="apply" from="CardsContainer/Card1" to="Status" method="_on_card_apply"]
+[connection signal="hovered" from="CardsContainer/Card1" to="Status" method="_on_card_hovered"]
+[connection signal="left" from="CardsContainer/Card1" to="Status" method="_on_card_left"]
+[connection signal="selected" from="CardsContainer/Card1" to="Status" method="_on_card_selected"]
+[connection signal="aim" from="CardsContainer/Card2" to="Status" method="_on_card_aim"]
+[connection signal="apply" from="CardsContainer/Card2" to="Status" method="_on_card_apply"]
+[connection signal="hovered" from="CardsContainer/Card2" to="Status" method="_on_card_hovered"]
+[connection signal="left" from="CardsContainer/Card2" to="Status" method="_on_card_left"]
+[connection signal="selected" from="CardsContainer/Card2" to="Status" method="_on_card_selected"]
+[connection signal="aim" from="CardsContainer/Card3" to="Status" method="_on_card_aim"]
+[connection signal="apply" from="CardsContainer/Card3" to="Status" method="_on_card_apply"]
+[connection signal="hovered" from="CardsContainer/Card3" to="Status" method="_on_card_hovered"]
+[connection signal="left" from="CardsContainer/Card3" to="Status" method="_on_card_left"]
+[connection signal="selected" from="CardsContainer/Card3" to="Status" method="_on_card_selected"]
+[connection signal="aim" from="CardsContainer/Card4" to="Status" method="_on_card_aim"]
+[connection signal="apply" from="CardsContainer/Card4" to="Status" method="_on_card_apply"]
+[connection signal="hovered" from="CardsContainer/Card4" to="Status" method="_on_card_hovered"]
+[connection signal="left" from="CardsContainer/Card4" to="Status" method="_on_card_left"]
+[connection signal="selected" from="CardsContainer/Card4" to="Status" method="_on_card_selected"]
+[connection signal="aim" from="CardsContainer/Card5" to="Status" method="_on_card_aim"]
+[connection signal="apply" from="CardsContainer/Card5" to="Status" method="_on_card_apply"]
+[connection signal="hovered" from="CardsContainer/Card5" to="Status" method="_on_card_hovered"]
+[connection signal="left" from="CardsContainer/Card5" to="Status" method="_on_card_left"]
+[connection signal="selected" from="CardsContainer/Card5" to="Status" method="_on_card_selected"]

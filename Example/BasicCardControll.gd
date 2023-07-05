@@ -9,12 +9,10 @@ func _ready():
 
 
 func _on_hovered():
-#	hint.show()
 	pass
 
 
 func _on_left():
-#	hint.hide()
 	pass
 
 
