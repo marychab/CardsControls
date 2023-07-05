@@ -1,11 +1,12 @@
 # CardsControls
  
-UI controls for creating card game. Include:
+UI controls for creating card game. For Godot Engine 4.0
+Include:
 
-## CardContainer
+### CardContainer
 Node for ordering children(cards) at row or at arc.
 
-## CardControll
+### CardControll
 Node that represent card. Have basic card behaviour.  
 ***Please set Custom minimus size in Layout section to avoid setting size to ZERO by CardContainer.***
 
