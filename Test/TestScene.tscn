@@ -1,0 +1,177 @@
+[gd_scene load_steps=5 format=3 uid="uid://ckesbqsq4jh5e"]
+
+[ext_resource type="Script" path="res://Test/MyCardsContainer.gd" id="1_t7i1g"]
+[ext_resource type="Texture2D" uid="uid://cdayo66c6r37p" path="res://icon.svg" id="2_57fua"]
+[ext_resource type="Script" path="res://Test/BasicCardControll.gd" id="3_f5ktn"]
+[ext_resource type="Script" path="res://Test/Status.gd" id="4_1nyb3"]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="CardsContainer" type="Container" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -153.0
+offset_top = -89.0
+offset_right = 154.0
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("1_t7i1g")
+sorting_type = 1
+arc_radius = 298.0
+arc_width = 695.0
+max_width = 553
+separation = -55
+
+[node name="Card1" type="Control" parent="CardsContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+tooltip_text = "xcvxcvx"
+script = ExtResource("3_f5ktn")
+
+[node name="TextureRect5" type="ColorRect" parent="CardsContainer/Card1"]
+layout_mode = 2
+offset_right = 128.0
+offset_bottom = 128.0
+pivot_offset = Vector2(64.0002, 64)
+mouse_filter = 2
+color = Color(0.403922, 0.701961, 0.654902, 1)
+
+[node name="Card2" type="TextureRect" parent="CardsContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+texture = ExtResource("2_57fua")
+script = ExtResource("3_f5ktn")
+
+[node name="Label" type="Label" parent="CardsContainer/Card2"]
+layout_mode = 0
+offset_left = 12.1755
+offset_top = 9.73993
+offset_right = 52.1755
+offset_bottom = 35.7399
+text = "10
+"
+
+[node name="ColorRect" type="ColorRect" parent="CardsContainer/Card2"]
+layout_mode = 0
+offset_left = 47.4161
+offset_top = -15.5602
+offset_right = 87.4161
+offset_bottom = 24.4398
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="CardsContainer/Card2/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "8"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Card3" type="TextureRect" parent="CardsContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+texture = ExtResource("2_57fua")
+script = ExtResource("3_f5ktn")
+
+[node name="Label" type="Label" parent="CardsContainer/Card3"]
+layout_mode = 0
+offset_left = 12.1755
+offset_top = 9.73993
+offset_right = 52.1755
+offset_bottom = 35.7399
+text = "10
+"
+
+[node name="ColorRect" type="ColorRect" parent="CardsContainer/Card3"]
+layout_mode = 0
+offset_left = 47.4161
+offset_top = -15.5602
+offset_right = 87.4161
+offset_bottom = 24.4398
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="CardsContainer/Card3/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "8"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Card4" type="TextureRect" parent="CardsContainer"]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+texture = ExtResource("2_57fua")
+script = ExtResource("3_f5ktn")
+
+[node name="Label" type="Label" parent="CardsContainer/Card4"]
+layout_mode = 0
+offset_left = 12.1755
+offset_top = 9.73993
+offset_right = 52.1755
+offset_bottom = 35.7399
+text = "10
+"
+
+[node name="ColorRect" type="ColorRect" parent="CardsContainer/Card4"]
+layout_mode = 0
+offset_left = 47.4161
+offset_top = -15.5602
+offset_right = 87.4161
+offset_bottom = 24.4398
+mouse_filter = 2
+
+[node name="Label" type="Label" parent="CardsContainer/Card4/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "8"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -113.0
+offset_top = -11.0
+offset_right = 113.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_alignment = 1
+script = ExtResource("4_1nyb3")
+
+[connection signal="aim" from="CardsContainer/Card2" to="Label" method="_on_card_aim"]
+[connection signal="apply" from="CardsContainer/Card2" to="Label" method="_on_card_apply"]
+[connection signal="hovered" from="CardsContainer/Card2" to="Label" method="_on_card_hovered"]
+[connection signal="left" from="CardsContainer/Card2" to="Label" method="_on_card_left"]
+[connection signal="selected" from="CardsContainer/Card2" to="Label" method="_on_card_selected"]
+[connection signal="aim" from="CardsContainer/Card3" to="Label" method="_on_card_aim"]
+[connection signal="apply" from="CardsContainer/Card3" to="Label" method="_on_card_apply"]
+[connection signal="hovered" from="CardsContainer/Card3" to="Label" method="_on_card_hovered"]
+[connection signal="left" from="CardsContainer/Card3" to="Label" method="_on_card_left"]
+[connection signal="selected" from="CardsContainer/Card3" to="Label" method="_on_card_selected"]
+[connection signal="aim" from="CardsContainer/Card4" to="Label" method="_on_card_aim"]
+[connection signal="apply" from="CardsContainer/Card4" to="Label" method="_on_card_apply"]
+[connection signal="hovered" from="CardsContainer/Card4" to="Label" method="_on_card_hovered"]
+[connection signal="left" from="CardsContainer/Card4" to="Label" method="_on_card_left"]
+[connection signal="selected" from="CardsContainer/Card4" to="Label" method="_on_card_selected"]
