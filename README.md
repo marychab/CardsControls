@@ -6,7 +6,7 @@ Include:
 ### CardContainer
 Node for ordering children(cards) at row or at arc.
 
-### CardControll
+### CardControl
 Node that represent card. Have basic card behaviour.  
 ***Please set Custom minimus size in Layout section to avoid setting size to ZERO by CardContainer.***
 
