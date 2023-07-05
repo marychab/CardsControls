@@ -16,5 +16,6 @@ selected - emmited when left mouse button pressed down.
 aim(coords : Vector2) - emmited when drag mouse with left mouse button pressed.
 apply(coord : vector2) - emmited when left mouse button up outside card.
 
+
 _To add your own functionality for cards or container, just extend script.
 See ExampleScene.tscn_
